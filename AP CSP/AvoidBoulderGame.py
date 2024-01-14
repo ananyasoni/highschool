@@ -113,13 +113,13 @@ def onStep():
         timer.value += 0
         rock.visible = False
         rock2.visible = False
-    # Calling another function made by me to increase boulder speed progressively.
+    # Calling another function to increase boulder speed progressively.
     if counter.value == 1:
         rock2.centerY += getincrement(timer.value)
         rock.centerY = rock.centerY + getincrement(timer.value)
         timer.value += 1
-    # Boulder 1 and 2 dropping from the sky at random places using two different
-    # functions made by me.
+    # Boulder 1 and 2 drop from the sky at random x-positions using two different
+    # functions 
     if timer.value % 30 == 1:
         addRock(rock)
         stickPerson.toFront()
